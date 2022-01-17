@@ -15,6 +15,7 @@ aside {
     border: 1px solid black;
 }
 
+
 /* ============ */
 /* Auto setting the aspect ratio of iframe, you can check out the original code in following stackoverflow link */
 /* https://stackoverflow.com/questions/35814653/automatic-height-when-embedding-a-youtube-video/54924505#54924505 */
@@ -29,5 +30,11 @@ aside {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
 }
 /* ============ */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
