@@ -41,6 +41,7 @@ header {
 /* ============ */
 .flex {
     display: flex;
+    align-items: center;
 }
 .nav {
     display: flex;
@@ -66,6 +67,7 @@ i {
     align-items: center;
     border: 1px solid black;
     padding: 2px 0px 2px 6px;
+    width: 90%;
     height: 40px;
     background-color: #121212;
 }
@@ -95,7 +97,34 @@ i {
     display: flex;
 }
 .nav-input {
+    width: 100%;
     border: 0;
     background-color: transparent;
     color: #888888;
+}
+.flex-2 {
+    flex: 2 0 200px;
+}
+.flex-3 {
+    flex: 3 0 200px;
+}
+.flex-5 {
+    flex: 5 0 200px;
+}
+.flex-space {
+    justify-content: space-evenly;
+}
+.space-between {
+    justify-content: space-between;
+}
+/* .icon-mic {
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 8px;
+} */
+.round {
+    border-radius: 50%;
+}
+.border-none {
+    border: 0;
 }
