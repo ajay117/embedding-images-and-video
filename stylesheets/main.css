@@ -125,11 +125,11 @@ i {
         width: 42%;
     }
     .brand {
-        width: 28%;
+        width: 21%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 752px) {
     .nav-search {
         width: 80%;
     }
@@ -137,10 +137,29 @@ i {
         width: 36%;
     }
     .brand {
-        width: 34%;
+        width: 22%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .brand {
+        width: 25%;
+    }
+    .input {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 615px) {
+    .brand {
+        width: 28%;
+    }
+    .input {
+        width: 26%;
     }
 }
 @media screen and (max-width: 560px) {
+    .brand {
+        width: 35%;
+    }
     .input {
         display: none;
     }
