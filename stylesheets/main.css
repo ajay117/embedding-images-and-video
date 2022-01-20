@@ -1,3 +1,4 @@
+/* || Global */
 * {
     box-sizing: border-box;
 }
@@ -5,12 +6,12 @@ html,body {
     font-size: 16px;
     min-width: 460px;
 }
+
+/* || Element */
 header {
     background-color: #212121;
     color: #FFFFFF;
-}
-.container {
-    display: flex;
+    padding: 0
 }
 main {
     width: 60%;
@@ -22,15 +23,79 @@ section,
 aside {
     border: 1px solid black;
 }
-header {
-    padding: 0
+i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* || Class */
+.container {
+    display: flex;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-input {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    color: #888888;
+    justify-content: space-between;
+}
+.nav-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px 0px 2px 6px;
+    width: 90%;
+    height: 40px;
+    background-color: #121212;
+}
+.bi {
+    font-size: 24px;
+}
+.bi-search {
+    border: none;
+    padding: 0;
+}
+.brand {
+    width: 20%;
+    justify-content: flex-start;
+}
+.input {
+    width: 45%;
+}
+.options {
+    width: 35%;
+    justify-content: space-evenly;
+}
+.search {
+    text-align: center;
+    width: 64px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 1px 6px;
+    line-height: 40px;
+    background-color: #323232;
+}
+.options .search {
+    display: none;
+}
+.border-none {
+    border: 0;
 }
 .login {
     border: 1px solid #FFFFFF;
     padding: 8px 12px;
 }
-
-
 /* ============ */
 /* Auto setting the aspect ratio of iframe, you can check out the original code in following stackoverflow link */
 /* https://stackoverflow.com/questions/35814653/automatic-height-when-embedding-a-youtube-video/54924505#54924505 */
@@ -48,99 +113,8 @@ header {
     border: 0;
 }
 /* ============ */
-.flex {
-    display: flex;
-    align-items: center;
-}
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-i {
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    padding: 8px;
-}
-.bi {
-    font-size: 24px;
-}
-/* .nav-search input{
-    padding: 1px 2px;
-    height: 100%;
-    width: 80%;
-} */
-.nav-search {
-    display: flex;
-    align-items: center;
-    border: 1px solid black;
-    padding: 2px 0px 2px 6px;
-    width: 90%;
-    height: 40px;
-    background-color: #121212;
-}
-.bi-search {
-    border: none;
-    padding: 0;
-}
-.search {
-    text-align: center;
-    width: 64px;
-    height: 40px;
-    border: 1px solid black;
-    padding: 1px 6px;
-    line-height: 40px;
-    background-color: #323232;
-}
-.brand {
-    width: 20%;
-    justify-content: flex-start;
-}
-.input {
-    width: 45%;
-}
-.options {
-    width: 35%;
-    justify-content: space-evenly;
-}
-.flex {
-    display: flex;
-}
-.nav-input {
-    width: 100%;
-    border: 0;
-    background-color: transparent;
-    color: #888888;
-    justify-content: space-between;
-}
-.flex-2 {
-    flex: 2 0 200px;
-}
-.flex-3 {
-    flex: 3 0 200px;
-}
-.flex-5 {
-    flex: 5 0 200px;
-}
-/* .icon-mic {
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 8px;
-} */
-.round {
-    border-radius: 50%;
-}
-.border-none {
-    border: 0;
-}
-.hide {
-    display: none;
-}
-.options .search {
-    display: none;
-}
 
+/* || Utilities  */
 
 /* || Media Queries */
 @media screen and (max-width: 900px) {
@@ -160,13 +134,13 @@ i {
         width: 80%;
     }
     .input {
-        input: 36%
+        width: 36%;
     }
     .brand {
         width: 34%;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
     .input {
         display: none;
     }
