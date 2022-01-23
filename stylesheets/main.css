@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 html,body {
-    font-size: 16px;
+    font-size: 14px;
     min-width: 460px;
 }
 
@@ -14,12 +14,12 @@ header {
     padding: 0
 }
 main {
-    width: 60%;
+    width: 70%;
 }
 aside {
-    width: 40%;
+    width: 30%;
 }
-section,
+
 aside {
     border: 1px solid black;
 }
@@ -114,18 +114,69 @@ i {
     height: 100%;
     border: 0;
 }
+.user-controls i {
+    border: none;
+}
+.others {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -3px;
+    height: 62px;
+}
+/* .subscription {
+    justify-content: space-between;
+    padding: 0 10px;
+} */
+.subscription,
+.comment-showcase {
+    border: 1px solid black;
+    width: 48%;
+    justify-content: space-between;
+    padding: 0 10px;
+    /* line-height: 0; */
+}
+.logo-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.subscribe {
+    padding: 10px;
+    font-weight: 500;
+    background-color: #CC0100;
+    color: #FFFFFF;
+}
+.subscription,
+.comment-total {
+    line-height: 0;
+}
+.comment-prev img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
 /* ============ */
 
 /* || Utilities  */
 
 /* || Media Queries */
 @media screen and (max-width: 1000px) {
+    .others {
+        display: block;
+    }
     main {
         width: 100%;
     }
     aside {
         display: none;
     }
+
+@media screen and (max-width: 999px) {
+    .container {
+        display: block;
+    }
+}
 @media screen and (max-width: 900px) {
     .nav-search {
         width: 85%;
