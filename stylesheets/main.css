@@ -114,8 +114,12 @@ i {
     height: 100%;
     border: 0;
 }
-.user-controls i {
+.user-controls i,
+.comment-info i {
     border: none;
+}
+.comment-info {
+    align-items: center;
 }
 .others {
     display: flex;
